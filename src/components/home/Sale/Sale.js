@@ -1,51 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  saleImgOne,
-  saleImgTwo,
-  saleImgThree,
-} from "../../../assets/images/index";
+  cat_1,
+  dog_1,
+  dog_2
+} from "../../../assets/images";
 import Image from "../../designLayouts/Image";
 import ShopNow from "../../designLayouts/buttons/ShopNow";
 
 const Sale = () => {
   return (
-    <div className="py-20 flex flex-col md:flex-row items-center justify-between gap-4 lg:gap-10">
-      <div className="bg-[#f3f3f3] w-full md:w-2/3 lg:w-1/2 h-full flex flex-col justify-center items-center text-black">
-        <div className="aspect-w-4 aspect-h-3 w-full mb-4">
-          <Image className="h-full w-full object-cover" imgSrc={saleImgOne} />
+    <div className="py-10 md:py-20 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-20">
+      {/* Left Section */}
+      <div className="bg-gray-100 rounded-xl w-full md:w-2/3 lg:w-2/5 flex flex-col justify-center items-center text-gray-800 p-6 md:p-8 lg:p-10">
+        <div className="aspect-w-4 aspect-h-3 w-full mb-6">
+          <Image className="h-full w-full object-cover rounded-lg" imgSrc={cat_1} />
         </div>
-        <div className="text-left h-140 md:h-200 lg:h-260 w-full mx-4 ">
-          <div className="mx-8">
-            <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6">
-              Imprimante sales
-            </h2>
-            <p className="text-lg md:text-xl lg:text-2xl mb-6">
-              Up to{" "}
-              <span className="text-4xl md:text-5xl lg:text-5xl font-bold">
-                30%
-              </span>{" "}
-              sales for all impriamnte{" "}
-            </p>
-            <div className=" mb-8">
-              <ShopNow />
-            </div>
+        <div className="text-center md:text-left">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
+            Visit Our Center
+          </h2>
+          <p className="text-base md:text-lg lg:text-xl mb-4 md:mb-6">
+            Get up to{" "}
+            <span className="text-lg md:text-xl lg:text-2xl font-bold text-indigo-600">
+              30% OFF
+            </span>{" "}
+            on Booking Now
+          </p>
+          <div>
+            <ShopNow />
           </div>
         </div>
       </div>
 
-      <div className="w-full md:w-2/3 lg:w-1/2 h-auto flex flex-col gap-4 lg:gap-10">
-        <div className="h-1/2 w-full">
+      {/* Right Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 w-full md:w-2/3 lg:w-3/5">
+        <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden">
           <Link to="/shop">
-            <Image className="h-full w-full object-cover" imgSrc={saleImgTwo} />
+            <Image className="h-full w-full object-cover rounded-lg hover:shadow-xl transition-shadow duration-300" imgSrc={dog_1} />
           </Link>
         </div>
-        <div className="h-1/2 w-full">
+        <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden">
           <Link to="/shop">
-            <Image
-              className="h-full w-full object-cover"
-              imgSrc={saleImgThree}
-            />
+            <Image className="h-full w-full object-cover rounded-lg hover:shadow-xl transition-shadow duration-300" imgSrc={dog_2} />
           </Link>
         </div>
       </div>

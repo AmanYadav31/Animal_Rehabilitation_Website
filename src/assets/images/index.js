@@ -1,4 +1,4 @@
-import logo from "./orebiLogo.png";
+import main from "./main.png";
 import logoLight from "./logoLight.png";
 import bannerImgOne from "./banner/bannerImgOne.webp";
 import bannerImgTwo from "./banner/bannerImgTwo.webp";
@@ -6,6 +6,12 @@ import bannerImgThree from "./banner/bannerImgThree.webp";
 import saleImgOne from "./sale/saleImgOne.webp";
 import saleImgTwo from "./sale/saleImgTwo.webp";
 import saleImgThree from "./sale/saleImgThree.webp";
+import landing from './landing.png'
+import cat_1 from './cat_1.jpg'
+import dog_1 from './dog_1.jpg'
+import dog_2 from './dog_2.jpg'
+
+
 // ============== Products Start here ====================
 import pdf1 from "../pdf/pdf1.pdf";
 // New Arrivals
@@ -45,6 +51,8 @@ import spfOne from "./products/specialOffer/spfOne.webp";
 import spfTwo from "./products/specialOffer/spfTwo.webp";
 import spfThree from "./products/specialOffer/spfThree.webp";
 import spfFour from "./products/specialOffer/spfFour.webp";
+import animal from "./animal.jpg"
+import hospital from "./hospital.jpg"
 
 // Year Product
 import productOfTheYear from "./products/productOfTheYear.webp";
@@ -75,8 +83,13 @@ import ricoh5 from "../images/products/imprimante/ricoh5.webp";
 import espson1 from "../images/products/imprimante/espson1.webp";
 import espson2 from "../images/products/imprimante/espson2.webp";
 
+//About
+import dog from "./dog.png"
+import brand from "./brand.png"
+
+
 export {
-  logo,
+  main,
   logoLight,
   bannerImgOne,
   bannerImgTwo,
@@ -84,6 +97,10 @@ export {
   saleImgOne,
   saleImgTwo,
   saleImgThree,
+  landing,
+  cat_1,
+  dog_1,
+  dog_2,
   // ===================== Products start here ============
   // New Arrivals
   newArrOne,
@@ -122,6 +139,8 @@ export {
   spfTwo,
   spfThree,
   spfFour,
+  animal,
+  hospital,
 
   // Year Product
   productOfTheYear,
@@ -154,4 +173,8 @@ export {
   ricoh5,
   espson1,
   espson2,
+  //About
+  dog,
+  brand
+  
 };

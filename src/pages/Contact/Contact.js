@@ -58,20 +58,20 @@ const Contact = () => {
     }
     if (clientName && email && EmailValidation(email) && messages) {
       setSuccessMsg(
-        `Thank you dear ${clientName}, Your messages has been received successfully. Futher details will sent to you by your email at ${email}.`
+        `Thank you dear ${clientName}, Your feedback has been received successfully. Futher details will sent to you by your email at ${email}.`
       );
     }
   };
 
   return (
     <div className="max-w-container mx-auto px-4">
-      <Breadcrumbs title="Contact" prevLocation={prevLocation} />
+      <Breadcrumbs title="Feedback" prevLocation={prevLocation} />
       {successMsg ? (
         <p className="pb-20 w-96 font-medium text-green-500">{successMsg}</p>
       ) : (
         <form className="pb-20">
           <h1 className="font-titleFont font-semibold text-3xl">
-            Fill up a Form
+            Fill up the Feedback Form
           </h1>
           <div className="w-[500px] h-auto py-6 flex flex-col gap-6">
             <div>
@@ -112,7 +112,7 @@ const Contact = () => {
             </div>
             <div>
               <p className="text-base font-titleFont font-semibold px-2">
-                Messages
+                Feedback
               </p>
               <textarea
                 onChange={handleMessages}

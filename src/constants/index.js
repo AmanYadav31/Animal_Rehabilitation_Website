@@ -64,7 +64,7 @@ export const navBarList = [
   },
   {
     _id: 1002,
-    title: "Shop",
+    title: "Centre",
     link: "/shop",
   },
   {
@@ -74,7 +74,7 @@ export const navBarList = [
   },
   {
     _id: 1004,
-    title: "Contact",
+    title: "Feedback",
     link: "contact",
   },
   {

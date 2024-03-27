@@ -3,11 +3,8 @@ import Slider from "react-slick";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import {
-  newArrOne,
-  newArrTwo,
-  newArrThree,
-  newArrFour,
-} from "../../../assets/images/index";
+  animal
+} from "../../../assets/images";
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
 
@@ -47,13 +44,13 @@ const NewArrivals = () => {
     ],
   };
   return (
-    <div className="w-full pb-16">
+    <div className="w-full pb-16 bg-zinc-200">
       <Heading heading="New Arrivals" />
       <Slider {...settings}>
         <div className="px-2">
           <Product
             _id="100001"
-            img={newArrOne}
+            img={animal}
             productName="Round Table Clock"
             price="44.00"
             color="Black"
@@ -64,7 +61,7 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100002"
-            img={newArrTwo}
+            img={animal}
             productName="Smart Watch"
             price="250.00"
             color="Black"
@@ -75,7 +72,7 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100003"
-            img={newArrThree}
+            img={animal}
             productName="cloth Basket"
             price="80.00"
             color="Mixed"
@@ -86,7 +83,7 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100004"
-            img={newArrFour}
+            img={animal}
             productName="Funny toys for babies"
             price="60.00"
             color="Mixed"
@@ -97,7 +94,7 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100005"
-            img={newArrTwo}
+            img={animal}
             productName="Funny toys for babies"
             price="60.00"
             color="Mixed"
